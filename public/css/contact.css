@@ -1,0 +1,639 @@
+:root {
+  --light-color: #bc9cdf;
+  --primary-color: #933ded;
+  --primary-dark: #742fbd;
+  --secondary-color: #734a9f;
+  --bright-color: #6f2fb3;
+  --neutral-color: #8a5abe;
+  --dark-color: #4b2674;
+  --white-01: #fff;
+  --white-02: #f5f5f5;
+  --white-03: #ccc;
+}
+
+.grey {
+  width: 1300px;
+  background-color: whitesmoke;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contactFormSection {
+  background-color: var(--white-01);
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.head {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* CSS reset */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+/* Headings */
+
+.card-front__heading {
+  font-size: 1.5rem;
+  margin-top: .25rem;
+}
+
+.inside-page__heading {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.inside-page__heading,
+.card-front__text-view {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-top: .2rem;
+}
+
+.inside-page__heading--contact,
+.card-front__text-view--contact {
+  color: var(--primary-dark);
+}
+
+/* Front cover */
+
+.card-front__tp {
+  color: #fafbfa;
+}
+
+.card-front__text-here {
+  font-size: 1.2rem;
+  margin-top: -.2rem;
+}
+
+/* Back cover */
+
+.inside-page__text {
+  color: #333;
+}
+
+/* Buttons */
+
+.inside-page__btn {
+  background-color: transparent;
+  border: 3px solid;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  padding: .7rem .75rem;
+  position: relative;
+  text-decoration: none;
+  transition: all .3s ease;
+  width: 90%;
+  z-index: 10;
+}
+
+.inside-page__btn::before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scaleY(0);
+  transition: all .3s ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.inside-page__btn--contact {
+  border-color: var(--primary-dark);
+  color: var(--primary-dark);
+}
+
+.inside-page__btn--contact::before {
+  background-color: var(--primary-dark);
+}
+
+.inside-page__btn:hover {
+  color: #fafbfa;
+  text-decoration: none;
+}
+
+.inside-page__btn:hover::before {
+  transform: scaleY(1);
+}
+
+/* Layout Structure=========================================*/
+
+.main {
+  justify-content: center;
+  width: 100%;
+}
+
+.card-section {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, .05);
+  box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
+  height: 25rem;
+  position: relative;
+  transition: all 1s ease;
+  width: 25rem;
+}
+
+.flip-card {
+  height: 25rem;
+  perspective: 100rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  visibility: hidden;
+  width: 25rem;
+  z-index: 100;
+}
+
+.flip-card>* {
+  visibility: visible;
+}
+
+.flip-card__container {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  width: 100%;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-front {
+  background-color: #fafbfa;
+  height: 25rem;
+  width: 25rem;
+}
+
+.card-front__tp {
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  justify-content: center;
+  padding: .75rem;
+}
+
+.card-front__tp--contact {
+  background-color: var(--primary-dark);
+  height: 40vh;
+}
+
+.card-front__bt {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card-back {
+  background-color: #fafbfa;
+  transform: rotateY(180deg);
+}
+
+.video__container {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.inside-page {
+  background-color: #fafbfa;
+  box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  width: 25rem;
+  z-index: 1;
+}
+
+.inside-page__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+  width: 30rem;
+  margin-left: 280px;
+}
+
+.card:hover .flip-card__container {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .inside-page {
+  box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+}
+
+/**Contact Us Icons**/
+
+.contactsIcons a {
+  color: var(--white-01);
+  padding: 8px;
+}
+
+.contactsIcons a:hover {
+  color: #fafbfa;
+  padding: 8px;
+}
+
+.contactsIcons a .iconA {
+  background: #3b5998;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contactsIcons a .iconB {
+  background: #0e76a8;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.contactsIcons a .iconC {
+  background: #bc2a8d;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.contactsIcons a .iconD {
+  background: #ea4335;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.contactsIcons a .iconE {
+  background: #4dc247;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+/* Icons on Hover */
+.contactsIcons a .iconA:hover,
+.contactsIcons a .iconB:hover,
+.contactsIcons a .iconC:hover,
+.contactsIcons a .iconD:hover,
+.contactsIcons a .iconE:hover {
+  background: var(--secondary-color);
+}
+
+@media (max-width: 900px) {
+  .card,
+  .flip-card,
+  .card-front,
+  .inside-page {
+    height: 21rem;
+    width: 21rem;
+    font-size: 0.8rem;
+  }
+
+  .card-front__tp--contact {
+    background-color: var(--primary-dark);
+    height: 25vh;
+  }
+
+  .inside-page__btn {
+    margin-top: 30px;
+    font-size: 1rem;
+    padding-top: 0px;
+  }
+
+  .inside-page__btn--contact::before {
+    background-color: var(--primary-dark);
+  }
+
+  .inside-page__btn--contact {
+    width: 80%;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card,
+  .flip-card,
+  .card-front,
+  .inside-page {
+    height: 18rem;
+    width: 18rem;
+    font-size: 0.63rem;
+  }
+
+  .card-front__tp--contact {
+    background-color: var(--primary-dark);
+    height: 28vh;
+  }
+
+  .inside-page__btn {
+    margin-top: 25px;
+    font-size: 1rem;
+    padding-top: 0px;
+  }
+
+  .inside-page__btn--contact::before {
+    background-color: var(--primary-dark);
+  }
+
+  .inside-page__btn--contact {
+    width: 80%;
+    height: 35px;
+  }
+
+  .video__container {
+    visibility: hidden;
+  }
+}
+
+/* Contact Us Form*/
+
+.headerOne {
+  font-size: 30px;
+  font-weight: 200;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.headElement {
+  font-size: 18px;
+  font-weight: 400;
+  color: #636363;
+  padding-left: 180px;
+  padding-right: 180px;
+  margin-bottom: 20px;
+}
+
+/* Form wrapper */
+.formbold-main-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+.formbold-form-label {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--bright-color);
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.formbold-form-label-2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form input fields */
+.formbold-form-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Style for focused input fields */
+.formbold-form-input:focus {
+  border-color: #6a64f1;
+  box-shadow: 0px 0px 5px rgba(106, 100, 241, 0.5);
+}
+
+/* Submit button */
+.formbold-btn {
+  background: var(--primary-dark);
+  color: var(--white-01);
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for the button on hover */
+.formbold-btn:hover {
+  background: #0056b3;
+}
+
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.w-full {
+  width: 100%;
+}
+
+@media (min-width: 540px) {
+  .sm\:w-half {
+    width: 50%;
+  }
+
+  .headElement {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+.containerContactForm {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Form responsiveness */
+@media (max-width: 768px) {
+  .formbold-main-wrapper {
+    padding: 20px;
+  }
+
+  .headElement {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+/* FAQs */
+
+.major-containing {
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  border-top-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+}
+
+@media (min-width: 1280px) {
+  .major-containing {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .major-containing {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .major-containing {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 640px) {
+  .major-containing {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 640px) {
+  .faq-cunt-box {
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.faq-cunt-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .faq-box {
+    width: 50%;
+  }
+}
+
+.faq-box {
+  padding: 0.5rem;
+  width: 100%;
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.faq-btn {
+  --tw-bg-opacity: 1;
+  align-items: center;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  display: flex;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  color: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  background-image: none;
+  text-transform: none;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.faq-text {
+  font-weight: 600;
+  width: calc(100% - 2rem);
+}
+
+.question-icon {
+  color: var(--bright-color);
+  flex-shrink: 0;
+  height: 1.5rem;
+  margin-right: 1rem;
+  position: absolute;
+  right: 0;
+  width: 1.5rem;
+}
+
+.mainDivUl li {
+  align-items: start;
+  text-align: start;
+  list-style: none;
+}
+
+.pageEnd {
+  color: #434343;
+}

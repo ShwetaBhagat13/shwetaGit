@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training and Placement Cell - Recruit</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recruit.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Scroll Box JS-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['', 'Placements', 'Internships'],
+                ['2016-17', 10, 12],
+                ['2017-18', 12, 3],
+                ['2018-19', 9, 12],
+                ['2019-20', 10, 13],
+                ['2020-21', 15, 13],
+                ['2021-22', 24, 22]
+            ]);
+
+            var options = {
+                responsive: true,
+                chart: {
+                    title: 'Internships and Placements Offered',
+                    subtitle: '2016 to 2022',
+                },
+                bars: 'horizontal',
+                hAxis: { format: 'decimal' },
+                height: 400,
+                colors: ['#7e35cd', '#b18cd9']
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('chart_div'));
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+
+</head>
+
+<body class="mobile">
+
+    <!-- Navigtaion Bar -->
+    <section class="top container-fluid">
+        <nav>
+            <div class="container nav-wrapper">
+                <div class="brand">
+                    <div class="nav_img">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <span style="margin-right: 10px; text-decoration: none;"></span><strong>Training and Placement
+                        Cell</strong></span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div style="margin-top: 12px; margin-left: 10px; margin-right: -20px">
+                    <ul class="nav-list">
+                        <li class="navListItems"><a href="/">Home</a></li>
+                        <li class="navListItems"><a href="/notices">Notice</a></li>
+                        <li class="navListItems"><a href="/featured">Featured</a></li>
+                        <li class="navListItems"><a href="/register">Companies</a></li>
+                        <li class="navListItems active"><a href="recruit.html">Why Recruit?</a></li>
+                        <li class="navListItems"><a href="team.html">Our Team</a></li>
+                        <li class="navListItems"><a href="/events">Events</a></li>
+                        <li class="navListItems"><a href="ContactUs.html">Contact Us</a></li>
+                        <li class="navListItems"><a href="/login">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Why Recruit? -->
+    <section class="container"><br>
+        <div class="HeadContent" id="About">Why Recruit?</div>
+        <div class="HeadLine"></div><br><br>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Institute Background
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Maharaja Agrasen College, a constituent college of the University of Delhi, was founded in 1994.
+                        In 2005, Training and Placement Cell (TPC) was established.In the present world competition is
+                        at
+                        its peak and creating a place for self in a professional field is a tough task. While the
+                        college provides the students with education and all the necessary skills to excel, the Training
+                        and Placement Committee of Maharaja Agrasen College does its best to give them the opportunities
+                        to flourish through a common platform, which is shared by both the students and the corporates.
+                        The primary motive of TPC is to provide students with employment opportunities.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Objective
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        The Primary Objective of Training and Placement Cell is to bridge gap between the students and
+                        industries. We provides placements and internship opportunities to students. Apart from that,
+                        TPC also seeks to impart effective communication skills, management skills and all the necessary
+                        etiquettes which are of utmost importance. It becomes paramount to sharpen the skills of the
+                        students before they graduate because they would be stepping into a whole new world of
+                        competition. In order to fulfill the above mentioned goals, TPC keeps organizing interactive
+                        sessions for students including seminars, workshops and training sessions.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Industrial Experience
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Students gain insight into how things operate in a professional setting through training and
+                        internships. It assist students in becoming familiar with how the technology they learnt are
+                        used in the real world. When students enter the workspace as working professionals, this
+                        exposure enables them to perform at their highest level.
+
+                        TPC makes it easier for students to receive internships and placements from reputable national
+                        and
+                        international industries. Many of our alumni are employed by reputable worldwide
+                        corporations, and each year, we are setting a new placement record.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            All-Round Developement
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        Over ten sessions were held online throughout epidemic, twenty organisations offered placement
+                        opportunities, and more than eighty students received internships. At the job fair for the
+                        differently abled, more than 80 students volunteered. The cell hosted numerous workshops on
+                        topics such as content writing, linkedin, and CV making. By conducting workshops, It teaches the
+                        students management skills, communication skills, PR abilities, and more. In 2022, we held a
+                        number of workshops at the institution, including ones on career counselling, entrepreneurship,
+                        interviewing techniques, and FDP on Python.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <!-- Annual Reports -->
+    <section class="container-fluid" id="Statistics"><br>
+        <div class="HeadContent" id="About">Annual Reports & Brochures</div>
+        <div class="HeadLine"></div><br><br>
+        <div class="Stats-wrapper">
+            <ul class="AnnualRep">
+                <a href="assets/MAC TPC Brochure  2022-23.pdf">
+                    <li>2022-23</li>
+                </a>
+                <a href="assets/MAC TPC Brochure  2021-22.pdf">
+                    <li>2021-22</li>
+                </a>
+                <a href="assets/MAC TPC Brochure 2020-21.pdf">
+                    <li>2020-21</li>
+                </a>
+            </ul>
+        </div><br><br>
+    </section>
+
+    <!-- Placement Statistics -->
+    <section class="container" id="Statistics"><br>
+        <div class="HeadContent" id="About">Placement Statistics</div>
+        <div class="HeadLine"></div><br><br>
+        <div class="YearTable">
+            <table class="TableGroup">
+                <thead>
+                    <tr>
+                        <th class="TableHead">Year</th>
+                        <th class="TableHead">Maximum Package(LPA)</th>
+                        <th class="TableHead">Average Package(LPA)</th>
+                    </tr>
+                </thead>
+                <tbody class="TableBody">
+                    <tr>
+                        <th class="HeadOne">2016-17</th>
+                        <td class="DataOne">9</td>
+                        <td class="DataOne">4</td>
+                    </tr>
+                    <tr>
+                        <th class="HeadOne">2017-18 </th>
+                        <td class="DataOne">10</td>
+                        <td class="DataOne">3</td>
+                    </tr>
+                    <tr>
+                        <th class="HeadOne">2018-19</th>
+                        <td class="DataOne">7</td>
+                        <td class="DataOne">3.1</td>
+                    </tr>
+                    <tr>
+                        <th class="HeadOne">2019-20</th>
+                        <td class="DataOne">8</td>
+                        <td class="DataOne">3.2</td>
+                    </tr>
+                    <tr>
+                        <th class="HeadOne">2020-21</th>
+                        <td class="DataOne">15</td>
+                        <td class="DataOne">5</td>
+                    </tr>
+                    <tr>
+                        <th class="HeadOne">2021-22</th>
+                        <td class="DataOne">10</td>
+                        <td class="DataOne">5.9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><br>
+        <div><br><br><br>
+            <div class="HeadContent" id="BarChart">Internships & Placements Offered</div>
+            <div class="HeadLine"></div><br><br><br>
+
+            <!--Bar Chart -->
+            <div class="d-flex justify-content-center">
+                <div id="chart_div" style="width: 800px; height: 450px;"></div>
+            </div><br><br>
+        </div>
+    </section>
+
+    <!-- Featured Stars-->
+    <section class="container-fluid" id="Featured"><br>
+        <div class="HeadContent" id="About">Featured Stars</div>
+        <div class="HeadLine"></div><br><br>
+        <h5>Maharaja Agrasen College graduates have left their mark in the worlds of business, academia, and
+            politics.<br> Meet some of our
+            proudly produced alumni. </h5><br><br>
+        <div class="featureContainer">
+            <div class="FeaContainer">
+                <img src="images/alumni/divyansh.jfif" class="image"><br>
+                <div class="overlay">
+                    <p>2016-17<br>B.tech Electronics<br><br>Jupiter Networks<br>9 LPA</p>
+                </div>
+                <div class="FeatureDesc">
+                    <p><b><a href="https://www.linkedin.com/in/divyansh-lohia-42aa17110">Divyansh Lohia</a></b></p>
+                </div>
+            </div>
+            <div class="FeaContainer">
+                <img src="images/alumni/ashish.jpg" class="image"><br>
+                <div class="overlay">
+                    <p>2017-18<br>B.A.(H) English<br><br>BYJU'S<br>10 LPA</p>
+                </div>
+                <div class="FeatureDesc">
+                    <p><b><a href="https://www.linkedin.com/in/ashish-abhishek-38abb5b0">Ashish Abhishek</a></b></p>
+                </div>
+            </div>
+            <div class="FeaContainer">
+                <img src="images/alumni/abhishek.png" class="image"><br>
+                <div class="overlay">
+                    <p>2018-19<br>B.B.E<br><br>Ankit Steel<br>7 LPA</p>
+                </div>
+                <div class="FeatureDesc">
+                    <p><b><a href="https://www.linkedin.com/in/abhishek-ranjan-669311150">Abhishek Ranjan</a></b></p>
+                </div>
+            </div>
+            <div class="FeaContainer">
+                <img src="images/alumni/azfar.jfif" class="image"><br>
+                <div class="overlay">
+                    <p>2019-20<br>B.Sc. Physical Science<br><br>Browser Stack<br>15 LPA</p>
+                </div>
+                <div class="FeatureDesc">
+                    <p><b><a href="https://www.linkedin.com/in/azfar-lari">Azfar Lari</a></b></p>
+                </div>
+            </div>
+            <div class="FeaContainer">
+                <img src="images/alumni/suraj.jfif" class="image"><br>
+                <div class="overlay">
+                    <p>2019-20<br>B.B.E<br><br>Leap Finance<br>8 LPA</p>
+                </div>
+                <div class="FeatureDesc">
+                    <p><b><a href="https://www.linkedin.com/in/suraj93">Suraj</a></b></p>
+                </div><br>
+            </div>
+    </section><br>
+
+    <!-- Past Recruiters -->
+    <section class="container" id="PastRecruiters"><br>
+        <div class="HeadContent" id="About">Past Recruiters</div>
+        <div class="HeadLine"></div><br><br>
+        <div class="slider-area">
+            <div class="RecruitWrapper">
+                <div class="item"><img alt="" src="images/recruiters/amazon.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/Deloitte.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/tcs.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/byjus.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/decathlon.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/unacademy.png" width="auto" height="50"></div>
+                <div class="item"><img alt="" src="images/recruiters/EY.png" width="auto" height="40"></div>
+
+                <!-- repeat -->
+                <div class="item"><img alt="" src="images/recruiters/amazon.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/Deloitte.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/tcs.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/byjus.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/decathlon.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/unacademy.png" width="auto" height="50"></div>
+                <div class="item"><img alt="" src="images/recruiters/EY.png" width="auto" height="40"></div>
+
+                <!-- repeat -->
+                <div class="item"><img alt="" src="images/recruiters/amazon.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/Deloitte.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/tcs.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/byjus.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/decathlon.png" width="auto" height="40"></div>
+                <div class="item"><img alt="" src="images/recruiters/unacademy.png" width="auto" height="50"></div>
+                <div class="item"><img alt="" src="images/recruiters/EY.png" width="auto" height="40"></div>
+
+            </div>
+            <div class="RecruitWrapper">
+                <div class="item2"><img alt="" src="images/recruiters/Mindhouse.png" width="auto" height="70"></div>
+                <div class="item2"><img alt="" src="images/recruiters/flipkart.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/KBR.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/toppr.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/tresvista.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/upskillz.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/egiyok" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/AIM.png" width="auto" height="50"></div>
+
+                <!-- repeat -->
+                <div class="item2"><img alt="" src="images/recruiters/Mindhouse.png" width="auto" height="70"></div>
+                <div class="item2"><img alt="" src="images/recruiters/flipkart.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/KBR.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/toppr.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/tresvista.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/upskillz.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/egiyok" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/AIM.png" width="auto" height="50"></div>
+
+                <!-- repeat -->
+                <div class="item2"><img alt="" src="images/recruiters/Mindhouse.png" width="auto" height="70"></div>
+                <div class="item2"><img alt="" src="images/recruiters/flipkart.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/KBR.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/toppr.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/tresvista.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/upskillz.png" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/egiyok" width="auto" height="50"></div>
+                <div class="item2"><img alt="" src="images/recruiters/AIM.png" width="auto" height="50"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Process -->
+    <section class="containProcess" id="Process"><br>
+        <center>
+            <div class="HeadContent" id="About">The Process</div>
+            <div class="HeadLine"></div><br><br>
+        </center>
+        <p class="aboutCont">Welcome to the structured world of placements. Allow us to walk you through the systematic
+            steps:</p>
+        <ul class="process-list">
+            <li><strong>Pre Placement Talk:</strong> Informative session may be conduct to provide an overview of the
+                organization, its operations, and assist students in gaining insights into their expectations.</li>
+            <li><strong>Submission of Data and CVs:</strong> Streamline the process by by Providing companny with your
+                data along with your CV.</li>
+            <li><strong>Online Test:</strong> For select opportunities, be prepared for group discussions or online
+                assessments. This is your opportunity to showcase your abilities.</li>
+            <li><strong>Interview:</strong> Interviews can be either Online, On-campus or at the organization's
+                premises, depending on the convenience of the recruiter.</li>
+            <li><strong>Job Offer:</strong> Successful candidates will receive formal job offers. Subsequently, you will
+                liaise directly with the company for additional details.</li>
+        </ul>
+
+        <div class="guidance">
+            <h2>Guidance for Students:</h2>
+            <ul>
+                <li>Respect application deadlines; late submissions will not be entertained.</li>
+                <li>The students are advised to check their email and WhatsApp groups (more frequently during the
+                    placement week) ,for all Placement Cell related updates.
+                </li>
+            </ul>
+            <p>Your quest for professional success commences here. Let us embark on this journey together!</p>
+        </div><br>
+    </section>
+
+    <!-- Back To Top-->
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+            diameter: 50,
+            backgroundColor: '#995ed8',
+            textColor: '#fff'
+        });
+    </script>
+
+    <!-- JavaScript -->
+    <script src="js/code.js"></script>
+
+</body>
+
+</html>

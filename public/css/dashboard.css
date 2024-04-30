@@ -1,0 +1,107 @@
+:root {
+    --light-color: #bc9cdf;
+    --primary-color: #933ded;
+    --primary-dark: #742fbd;
+    --secondary-color: #734a9f;
+    --bright-color: #6f2fb3;
+    --neutral-color: #8a5abe;
+    --dark-color: #4b2674;
+    --white-01: #fff;
+    --white-02: #f5f5f5;
+    --white-03: #ccc;
+  }
+
+/* Dashboard Options */
+.dashboard-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.dashboard-option {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    border: 1.5px solid var(--neutral-color);
+    background-color: var(--white-01);
+    color: var(--neutral-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.dashboard-option:hover {
+    background-color: var(--neutral-color);
+    color: var(--white-01);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.optionName {
+    font-size: 24px;
+}
+
+.optionAbout {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Announcement Form */
+.announcement-form {
+    background-color: var(--white-02);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--white-03);
+    border-radius: 5px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: var(--neutral-color);
+    color: var(--white-01);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Icons */
+i.fas {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-option {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dashboard-option {
+        width: 90%;
+    }
+}

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training and Placement Cell - Our Team</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="mobile">
+
+    <!-- Navigtaion Bar -->
+    <section class="top container-fluid">
+        <nav>
+            <div class="container nav-wrapper">
+                <div class="brand">
+                    <div class="nav_img">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <span style="margin-right: 10px; text-decoration: none;"></span><strong>Training and Placement
+                        Cell</strong></span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div style="margin-top: 12px; margin-left: 10px; margin-right: -20px">
+                    <ul class="nav-list">
+                        <li class="navListItems">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="navListItems"><a href="/notices">Notice</a></li>
+                        </li>
+                        </li>
+                        <li class="navListItems"><a href="/featured">Featured</a></li>
+                        </li>
+                        <li class="navListItems"><a href="/register">Companies</a></li>
+                        <li class="navListItems">
+                            <a href="recruit.html">Why Recruit?</a>
+                        </li>
+                        <li class="navListItems"><a href="team.html">Our Team</a></li>
+                        <li class="navListItems active"><a href="/events">Events</a></li>
+                        <li class="navListItems"><a href="ContactUs.html">Contact Us</a></li>
+                        <li class="navListItems"><a href="/login">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Header -->
+    <section class="container" id="events">
+        <div class="headerBox"><br>
+            <h2 class="head" id="box-t">Events</h2>
+            <div class="HeadLine"></div>
+        </div><br>
+
+        <!-- Tabs (Year) -->
+        <div class="w3-container">
+            <div class="tabContainer">
+                <div class="w3-bar w3-black" id="myTab"><br>
+                    <button class="w3-bar-item w3-button tablink" onclick="openYear(event,'2021-22')">2021-22</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openYear(event,'2022-23')">2022-23</button>
+                    <button class="w3-bar-item w3-button tablink w3-red" onclick="openYear(event,'2023-24')">2023-24</button>
+                    <button class="w3-bar-item w3-button tablink"
+                        onclick="openYear(event,'2024-25')">2024-25</button>
+                </div>
+            </div><br>
+
+
+
+            <div id="2021-22" class="w3-container w3-border years" style="display:none"><br>
+                <div class="inputContainer">
+                    <% if (showActions) { %>
+                        <div class="formContainer">
+                            <h4 class="formHead">Enter Data:</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="date">Date</label>
+                                        <input type="text" class="form-control" id="date" name="date">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="title">Title</label>
+                                        <input type="text" class="form-control" id="title" name="title">
+                                    </div>
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="sname">Speaker's Name</label>
+                                        <input type="text" class="form-control" id="sname" name="sname">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="desg">Speaker's Designation</label>
+                                        <input type="text" class="form-control" id="desg" name="desg">
+                                    </div>
+                                </div><br>
+
+                                <div class="mb-3">
+                                    <label class="formLabel" for="report">Event Report</label>
+                                    <input type="text" class="form-control" id="report" name="report">
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-md-7 mb-3">
+                                        <label class="formLabel" for="outcomes">Learning Outcomes</label>
+                                        <input type="text" class="form-control" id="outcomes" name="outcomes">
+                                    </div>
+                                    <div class="col-md-5 mb-3">
+                                        <label class="formLabel" for="participants">No. of Participants</label>
+                                        <input type="text" class="form-control" id="participants" name="participants">
+                                    </div><br>
+                                    <button type="button" onclick="addRow()" class="btn">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                        <% } %>
+                </div>
+                <div class="tableContainer">
+                    <table class="show" id="tableData">
+                        <tr>
+                            <th>Date</th>
+                            <th>Title</th>
+                            <th>Speaker Name</th>
+                            <th>Speaker Designation</th>
+                            <th>Event Report</th>
+                            <th>Learning Outcomes</th>
+                            <th>No. of Participants</th>
+                            <% if (showActions) { %>
+                                <th>Action</th>
+                                <% } %>
+                        </tr>
+                        <% for (var i=0; i < rows.length; i++) { %>
+                            <tr>
+                                <td>
+                                    <%= rows[i].date %>
+                                </td>
+                                <td>
+                                    <%= rows[i].title %>
+                                </td>
+                                <td>
+                                    <%= rows[i].sname %>
+                                </td>
+                                <td>
+                                    <%= rows[i].desg %>
+                                </td>
+                                <td>
+                                    <%= rows[i].report %>
+                                </td>
+                                <td>
+                                    <%= rows[i].outcomes %>
+                                </td>
+                                <td>
+                                    <%= rows[i].participants %>
+                                </td>
+                                <% if (showActions) { %>
+                                    <td>
+                                        <button onclick="deleteRow(this)" class="dltbutton"
+                                            data-id="<%= rows[i].id %>">Delete</button>
+                                    </td>
+                                    <% } %>
+                            </tr>
+                            <% } %>
+                    </table><br>
+
+                    <h5 class="message">Update Events : <a href="/login" id="loginLink">Admin Dashboard login</a>
+                    </h5>
+                </div>
+            </div>
+
+            <div id="2022-23" class="w3-container w3-border years" style="display:none">
+                <div class="inputContainer"><br>
+                    <% if (showActions) { %>
+                        <div class="formContainer">
+                            <h4 class="formHead">Enter Data:</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="date">Date</label>
+                                        <input type="text" class="form-control" id="date2" name="date">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="title">Title</label>
+                                        <input type="text" class="form-control" id="title2" name="title">
+                                    </div>
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="sname">Speaker's Name</label>
+                                        <input type="text" class="form-control" id="sname2" name="sname">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="desg">Speaker's Designation</label>
+                                        <input type="text" class="form-control" id="desg2" name="desg">
+                                    </div>
+                                </div><br>
+
+                                <div class="mb-3">
+                                    <label class="formLabel" for="report">Event Report</label>
+                                    <input type="text" class="form-control" id="report2" name="report">
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-md-7 mb-3">
+                                        <label class="formLabel" for="outcomes">Learning Outcomes</label>
+                                        <input type="text" class="form-control" id="outcomes2" name="outcomes">
+                                    </div>
+                                    <div class="col-md-5 mb-3">
+                                        <label class="formLabel" for="participants">No. of Participants</label>
+                                        <input type="text" class="form-control" id="participants2" name="participants">
+                                    </div><br>
+                                    <button type="button" onclick="addRow2()" class="btn">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                        <% } %>
+                </div>
+                <div class="tableContainer">
+                    <table class="show" id="tableData2">
+                        <tr>
+                            <th>Date</th>
+                            <th>Title</th>
+                            <th>Speaker Name</th>
+                            <th>Speaker Designation</th>
+                            <th>Event Report</th>
+                            <th>Learning Outcomes</th>
+                            <th>No. of Participants</th>
+                            <% if (showActions) { %>
+                                <th>Action</th>
+                                <% } %>
+                        </tr>
+                        <% for (var i=0; i < rows2.length; i++) { %>
+                            <tr>
+                                <td>
+                                    <%= rows2[i].date2 %>
+                                </td>
+                                <td>
+                                    <%= rows2[i].title2 %>
+                                </td>
+                                <td>
+                                    <%= rows2[i].sname2 %>
+                                </td>
+                                <td>
+                                    <%= rows2[i].desg2 %>
+                                </td>
+                                <td>
+                                    <%= rows2[i].report2 %>
+                                </td>
+                                <td>
+                                    <%= rows2[i].outcomes2 %>
+                                </td>
+                                <td>
+                                    <%= rows2[i].participants2 %>
+                                </td>
+                                <% if (showActions) { %>
+                                    <td>
+                                        <button onclick="deleteRow2(this)" class="dltbutton"
+                                            data-id="<%= rows2[i].id2 %>">Delete</button>
+                                    </td>
+                                    <% } %>
+                            </tr>
+                            <% } %>
+                    </table>
+                </div><br>
+                <h5 class="message">Update Events : <a href="/login" id="loginLink">Admin Dashboard login</a>
+                </h5>
+            </div>
+
+            <div id="2023-24" class="w3-container w3-border years">
+                <div class="inputContainer"><br>
+                    <% if (showActions) { %>
+                        <div class="formContainer">
+                            <h4 class="formHead">Enter Data:</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="date">Date</label>
+                                        <input type="text" class="form-control" id="date3" name="date">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="title">Title</label>
+                                        <input type="text" class="form-control" id="title3" name="title">
+                                    </div>
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="sname">Speaker's Name</label>
+                                        <input type="text" class="form-control" id="sname3" name="sname">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="desg">Speaker's Designation</label>
+                                        <input type="text" class="form-control" id="desg3" name="desg">
+                                    </div>
+                                </div><br>
+
+                                <div class="mb-3">
+                                    <label class="formLabel" for="report">Event Report</label>
+                                    <input type="text" class="form-control" id="report3" name="report">
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-md-7 mb-3">
+                                        <label class="formLabel" for="outcomes">Learning Outcomes</label>
+                                        <input type="text" class="form-control" id="outcomes3" name="outcomes">
+                                    </div>
+                                    <div class="col-md-5 mb-3">
+                                        <label class="formLabel" for="participants">No. of Participants</label>
+                                        <input type="text" class="form-control" id="participants3" name="participants">
+                                    </div><br>
+                                    <button type="button" onclick="addRow3()" class="btn">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                        <% } %>
+                </div>
+                <div class="tableContainer">
+                    <table class="show" id="tableData3">
+                        <tr>
+                            <th>Date</th>
+                            <th>Title</th>
+                            <th>Speaker Name</th>
+                            <th>Speaker Designation</th>
+                            <th>Event Report</th>
+                            <th>Learning Outcomes</th>
+                            <th>No. of Participants</th>
+                            <% if (showActions) { %>
+                                <th>Action</th>
+                                <% } %>
+                        </tr>
+                        <% for (var i=0; i < rows3.length; i++) { %>
+                            <tr>
+                                <td>
+                                    <%= rows3[i].date3 %>
+                                </td>
+                                <td>
+                                    <%= rows3[i].title3 %>
+                                </td>
+                                <td>
+                                    <%= rows3[i].sname3 %>
+                                </td>
+                                <td>
+                                    <%= rows3[i].desg3 %>
+                                </td>
+                                <td>
+                                    <%= rows3[i].report3 %>
+                                </td>
+                                <td>
+                                    <%= rows3[i].outcomes3 %>
+                                </td>
+                                <td>
+                                    <%= rows3[i].participants3 %>
+                                </td>
+                                <% if (showActions) { %>
+                                    <td>
+                                        <button onclick="deleteRow3(this)" class="dltbutton"
+                                            data-id="<%= rows3[i].id3 %>">Delete</button>
+                                    </td>
+                                    <% } %>
+                            </tr>
+                            <% } %>
+                    </table>
+                </div><br>
+                <h5 class="message">Update Events : <a href="/login" id="loginLink">Admin Dashboard login</a>
+                </h5>
+            </div>
+
+            <div id="2024-25" class="w3-container w3-border years" style="display:none">
+                <div class="inputContainer"><br>
+                    <% if (showActions) { %>
+                        <div class="formContainer">
+                            <h4 class="formHead">Enter Data:</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="date">Date</label>
+                                        <input type="text" class="form-control" id="date4" name="date">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="title">Title</label>
+                                        <input type="text" class="form-control" id="title4" name="title">
+                                    </div>
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="sname">Speaker's Name</label>
+                                        <input type="text" class="form-control" id="sname4" name="sname">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="formLabel" for="desg">Speaker's Designation</label>
+                                        <input type="text" class="form-control" id="desg4" name="desg">
+                                    </div>
+                                </div><br>
+
+                                <div class="mb-3">
+                                    <label class="formLabel" for="report">Event Report</label>
+                                    <input type="text" class="form-control" id="report4" name="report">
+                                </div><br>
+
+                                <div class="row">
+                                    <div class="col-md-7 mb-3">
+                                        <label class="formLabel" for="outcomes">Learning Outcomes</label>
+                                        <input type="text" class="form-control" id="outcomes4" name="outcomes">
+                                    </div>
+                                    <div class="col-md-5 mb-3">
+                                        <label class="formLabel" for="participants">No. of Participants</label>
+                                        <input type="text" class="form-control" id="participants4" name="participants">
+                                    </div><br>
+                                    <button type="button" onclick="addRow4()" class="btn">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                        <% } %>
+                </div>
+                <div class="tableContainer">
+                    <table class="show" id="tableData4">
+                        <tr>
+                            <th>Date</th>
+                            <th>Title</th>
+                            <th>Speaker Name</th>
+                            <th>Speaker Designation</th>
+                            <th>Event Report</th>
+                            <th>Learning Outcomes</th>
+                            <th>No. of Participants</th>
+                            <% if (showActions) { %>
+                                <th>Action</th>
+                                <% } %>
+                        </tr>
+                        <% for (var i=0; i < rows4.length; i++) { %>
+                            <tr>
+                                <td>
+                                    <%= rows4[i].date4 %>
+                                </td>
+                                <td>
+                                    <%= rows4[i].title4 %>
+                                </td>
+                                <td>
+                                    <%= rows4[i].sname4 %>
+                                </td>
+                                <td>
+                                    <%= rows4[i].desg4 %>
+                                </td>
+                                <td>
+                                    <%= rows4[i].report4 %>
+                                </td>
+                                <td>
+                                    <%= rows4[i].outcomes4 %>
+                                </td>
+                                <td>
+                                    <%= rows4[i].participants4 %>
+                                </td>
+                                <% if (showActions) { %>
+                                    <td>
+                                        <button onclick="deleteRow4(this)" class="dltbutton"
+                                            data-id="<%= rows4[i].id4 %>">Delete</button>
+                                    </td>
+                                    <% } %>
+                            </tr>
+                            <% } %>
+                    </table>
+                </div><br>
+                <h5 class="message">Update Events : <a href="/login" id="loginLink">Admin Dashboard login</a>
+                </h5>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/code.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>
+        function addRow() {
+            var date = $('#date').val();
+            var title = $('#title').val();
+            var sname = $('#sname').val();
+            var desg = $('#desg').val();
+            var report = $('#report').val();
+            var outcomes = $('#outcomes').val();
+            var participants = $('#participants').val();
+            $.ajax({
+                url: '/add_data',
+                method: 'POST',
+                data: {
+                    date: date,
+                    title: title,
+                    sname: sname,
+                    desg: desg,
+                    report: report,
+                    outcomes: outcomes,
+                    participants: participants
+                },
+                success: function () {
+                    location.reload();
+                }
+            });
+        }
+
+        function deleteRow(btn) {
+            const row = btn.parentNode.parentNode;
+            const id = btn.getAttribute('data-id');
+            const confirmed = confirm("Are you sure you want to delete this row?");
+            if (confirmed) {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', '/delete_data', true);
+                xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                xhr.send(`id=${id}`);
+                row.parentNode.removeChild(row);
+            }
+        }
+
+
+        // for 2022-23
+        function addRow2() {
+            var date2 = $('#date2').val();
+            var title2 = $('#title2').val();
+            var sname2 = $('#sname2').val();
+            var desg2 = $('#desg2').val();
+            var report2 = $('#report2').val();
+            var outcomes2 = $('#outcomes2').val();
+            var participants2 = $('#participants2').val();
+            $.ajax({
+                url: '/add_data2',
+                method: 'POST',
+                data: {
+                    date2: date2,
+                    title2: title2,
+                    sname2: sname2,
+                    desg2: desg2,
+                    report2: report2,
+                    outcomes2: outcomes2,
+                    participants2: participants2
+                },
+                success: function () {
+                    location.reload();
+                }
+            });
+        }
+
+        function deleteRow2(btn) {
+            const row2 = btn.parentNode.parentNode;
+            const id2 = btn.getAttribute('data-id');
+            const confirmDelete = confirm("Are you sure you want to delete this row?");
+            if (confirmDelete === true) {
+                const xhr2 = new XMLHttpRequest();
+                xhr2.open('POST', '/delete_data2', true);
+                xhr2.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                xhr2.send(`id2=${id2}`);
+                row2.parentNode.removeChild(row2);
+            }
+        }
+
+
+        // for 2023-24
+        function addRow3() {
+            var date3 = $('#date3').val();
+            var title3 = $('#title3').val();
+            var sname3 = $('#sname3').val();
+            var desg3 = $('#desg3').val();
+            var report3 = $('#report3').val();
+            var outcomes3 = $('#outcomes3').val();
+            var participants3 = $('#participants3').val();
+            $.ajax({
+                url: '/add_data3',
+                method: 'POST',
+                data: {
+                    date3: date3,
+                    title3: title3,
+                    sname3: sname3,
+                    desg3: desg3,
+                    report3: report3,
+                    outcomes3: outcomes3,
+                    participants3: participants3
+                },
+                success: function () {
+                    location.reload();
+                }
+            });
+        }
+
+        function deleteRow3(btn) {
+            const row3 = btn.parentNode.parentNode;
+            const id3 = btn.getAttribute('data-id');
+            const confirmDelete = confirm("Are you sure you want to delete this row?");
+            if (confirmDelete === true) {
+                const xhr3 = new XMLHttpRequest();
+                xhr3.open('POST', '/delete_data3', true);
+                xhr3.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                xhr3.send(`id3=${id3}`);
+                row3.parentNode.removeChild(row3);
+            }
+        }
+
+        // for 2024-25
+        function addRow4() {
+            var date4 = $('#date4').val();
+            var title4 = $('#title4').val();
+            var sname4 = $('#sname4').val();
+            var desg4 = $('#desg4').val();
+            var report4 = $('#report4').val();
+            var outcomes4 = $('#outcomes4').val();
+            var participants4 = $('#participants4').val();
+            $.ajax({
+                url: '/add_data4',
+                method: 'POST',
+                data: {
+                    date4: date4,
+                    title4: title4,
+                    sname4: sname4,
+                    desg4: desg4,
+                    report4: report4,
+                    outcomes4: outcomes4,
+                    participants4: participants4
+                },
+                success: function () {
+                    location.reload();
+                }
+            });
+        }
+
+        function deleteRow4(btn) {
+            const row4 = btn.parentNode.parentNode;
+            const id4 = btn.getAttribute('data-id');
+            const confirmDelete = confirm("Are you sure you want to delete this row?");
+            if (confirmDelete === true) {
+                const xhr4 = new XMLHttpRequest();
+                xhr4.open('POST', '/delete_data4', true);
+                xhr4.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                xhr4.send(`id4=${id4}`);
+                row4.parentNode.removeChild(row4);
+            }
+        }
+
+        //tabs
+        function openYear(evt, yearName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("years");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(yearName).style.display = "block";
+            evt.currentTarget.className += " w3-red";
+        }
+
+        //Back to top
+        addBackToTop({
+            diameter: 50,
+            backgroundColor: '#995ed8',
+            textColor: '#fff'
+        });
+    </script>
+
+</body>
+
+</html>

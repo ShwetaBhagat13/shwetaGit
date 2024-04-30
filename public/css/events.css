@@ -1,0 +1,177 @@
+:root {
+  --light-color: #bc9cdf;
+  --primary-color: #933ded;
+  --primary-dark: #742fbd;
+  --secondary-color: #734a9f;
+  --bright-color: #6f2fb3;
+  --neutral-color: #8a5abe;
+  --dark-color: #4b2674;
+  --white-01: #fff;
+  --white-02: #f5f5f5;
+  --white-03: #ccc;
+}
+
+/* tab */
+.tabContainer {
+  width: 100%;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+}
+
+.tablink {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s;
+  font-size: 17px;
+  flex-grow: 1;
+}
+
+.w3-red {
+  background-color: var(--primary-color);
+  color: var(--white-01);
+  border: none;
+  outline: none;
+}
+
+.w3-black {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
+}
+
+.inputContainer {
+  width: 100%;
+  display: block;
+  justify-content: left;
+  text-align: left;
+}
+
+/* form */
+
+.formContainer {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 5vw;
+}
+
+.formHead {
+  color: var(--primary-color);
+}
+
+.formLabel {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.dltbutton {
+  background: rgb(179, 64, 64);
+  color: var(--white-01);
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+  padding: 8px 10px;
+  margin: 2vw;
+  border-radius: 5px;
+}
+
+/* table */
+
+.show th {
+  border: 2px solid var(--white-03);
+  padding: 2vw;
+}
+
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+}
+
+td,
+th {
+  border: 2px solid var(--white-03);
+  text-align: left;
+  padding: 1vw;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+  .formContainer {
+    padding: 10px;
+  }
+
+  .dltbutton {
+    padding: 5px 8px;
+    margin: 5px;
+  }
+
+  .show th:nth-child(4),
+  .show td:nth-child(4),
+  .show th:nth-child(6),
+  .show td:nth-child(6),
+  .show th:nth-child(7),
+  .show td:nth-child(7) {
+    display: none;
+  }
+
+  .show th {
+    padding: 5px;
+  }
+
+  td,
+  th {
+    padding: 3px;
+    font-size: 10px;
+  }
+
+  .tablink {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .formContainer {
+    padding: 10px;
+  }
+
+  .dltbutton {
+    padding: 5px 8px;
+    margin: 5px;
+  }
+
+  .show th:nth-child(7),
+  .show td:nth-child(7) {
+    display: none;
+  }
+
+  .show th {
+    padding: 10px;
+  }
+
+  td,
+  th {
+    padding: 5px;
+  }
+
+  .tablink {
+    font-size: 14px;
+  }
+}
+
+.message {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .message {
+    font-size: 14px;
+  }
+}

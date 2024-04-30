@@ -1,0 +1,220 @@
+:root {
+    --light-color: #bc9cdf;
+    --primary-color: #933ded;
+    --primary-dark: #742fbd;
+    --secondary-color: #734a9f;
+    --bright-color: #6f2fb3;
+    --neutral-color: #8a5abe;
+    --dark-color: #4b2674;
+    --white-01: #fff;
+    --white-02: #f5f5f5;
+    --white-03: #ccc;
+  }
+  
+  /* Containers */
+  
+  .containerGuide {
+      padding-left: 70px;
+      padding-right: 70px;
+      background-color: var(--white-02);
+  }
+  
+  .form-contain {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 25px;
+  }
+  
+  /* Headers */
+  
+  .titleHead {
+      color: var(--primary-color);
+      text-align: center;
+      font-weight: 700;
+  }
+  
+  .companyHead {
+      color: var(--primary-color);
+  }
+  
+  /* Recruiters */
+  
+  .RecruitWrapper {
+      display: flex;
+      width: 970px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 180px;
+      padding: 0.2rem;
+  }
+  
+  @media (max-width:767px) {
+      .slider-area h2 {
+          font-size: 30px;
+      }
+  
+      .RecruitWrapper {
+          width: 95%;
+          border-radius: 0;
+          padding: 0;
+      }
+  }
+  
+  .item3 {
+      animation: animate 40s linear infinite;
+      padding: 25px;
+  }
+  
+  .item4 {
+      animation: animate 25s linear infinite;
+      padding: 25px;
+  }
+  
+  @keyframes animate {
+      0% {
+          transform: translate3d(0, 0, 0);
+      }
+  
+      100% {
+          transform: translate3d(-2000px, 0, 0);
+      }
+  }
+  
+  /* form */
+  
+  .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid var(--white-03);
+      border-radius: 5px;
+      margin-top: 20px;
+      background-color: var(--white-02);
+  }
+  
+  .tab-button {
+      background-color: var(--secondary-color);
+      color: var(--white-01);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s, border-radius 0.3s;
+  }
+  
+  .tab-button.ActiveOpt {
+      background-color: var(--bright-color);
+      font-weight: bold;
+      box-shadow: 0 0 4px var(--bright-color);
+      border-radius: 5px;
+  }
+  
+  label {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid var(--white-03);
+      border-radius: 3px;
+  }
+  
+  .descCont {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid var(--white-03);
+      border-radius: 3px;
+      height: 150px;
+  }
+  
+  button[type="submit"] {
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 20px auto;
+      display: block;
+      cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+  
+  .formHeads {
+      font-size: 30px;
+      font-weight: 200;
+      color: var(--primary-color);
+      text-transform: capitalize;
+      margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+      .form-container {
+          max-width: 100%;
+          padding: 10px;
+      }
+  
+      .RecruitWrapper .item3 img,
+      .RecruitWrapper .item4 img {
+          height: 40px;
+      }
+  
+      .containerGuide {
+          padding: 30px;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+  
+      .form-contain {
+          max-width: 100%;
+          padding: 10px;
+      }
+  }
+  
+  @media (max-width: 576px) {
+      .form-container {
+          padding: 5px;
+      }
+  
+      .RecruitWrapper .item3 img,
+      .RecruitWrapper .item4 img {
+          height: 30px;
+      }
+  
+      label,
+      input,
+      button {
+          font-size: 14px;
+      }
+  
+      .containerGuide {
+          padding: 10px;
+      }
+  
+      .formHeads {
+          font-size: 20px;
+          margin-bottom: 10px;
+      }
+  
+      .descCont {
+          height: 100px;
+      }
+  
+      .tab-selection {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+  
+      .tab-button {
+          flex-basis: calc(33.33% - 10px);
+      }
+  }
+  

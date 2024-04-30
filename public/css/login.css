@@ -1,0 +1,107 @@
+:root {
+    --light-color: #bc9cdf;
+    --primary-color: #933ded;
+    --primary-dark: #742fbd;
+    --secondary-color: #734a9f;
+    --bright-color: #6f2fb3;
+    --neutral-color: #8a5abe;
+    --dark-color: #4b2674;
+    --white-01: #fff;
+    --white-02: #f5f5f5;
+    --white-03: #ccc;
+  }
+
+/* Containers */
+
+.containerLogin {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+}
+
+.loginForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Login forms */
+
+.logForm {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logForm label {
+    display: block;
+    text-align: left;
+    color: var(--dark-color);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.logForm input[type="text"],
+.logForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid var(--white-03);
+    border-radius: 5px;
+    background-color: var(--white-01);
+}
+
+.logForm button {
+    background: var(--primary-color);
+    color: var(--white-01);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .loginForm {
+        max-width: 80%;
+    }
+}
+
+.form-gap {
+    padding-top: 70px;
+}
+
+.register-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}

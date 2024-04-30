@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+button,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+}
+
+/* Add this CSS to your existing styles.css file or create a new one */
+.newsletter {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    margin-bottom: 10px;
+}
+
+.newsletter img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.newsletter video {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.newsletter a {
+    display: block;
+    margin-bottom: 10px;
+}

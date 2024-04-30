@@ -1,0 +1,265 @@
+:root {
+  --light-color: #bc9cdf;
+  --primary-color: #933ded;
+  --primary-dark: #742fbd;
+  --secondary-color: #734a9f;
+  --bright-color: #6f2fb3;
+  --neutral-color: #8a5abe;
+  --dark-color: #4b2674;
+  --white-01: #fff;
+  --white-02: #f5f5f5;
+  --white-03: #ccc;
+}
+
+/* Why recruit */
+.btn-link {
+  color : var(--primary-color) !important;
+  font-weight: 600 !important;
+  text-decoration: none;
+}
+
+/* Statistics */
+
+.AnnualRep {
+    padding: 0px;
+    margin: 20px;
+  }
+  
+  .AnnualRep li {
+    list-style-type: none;
+    padding-bottom: 1rem;
+    padding-top: 0.75rem;
+    width: 100%;
+  }
+  
+  .AnnualRep a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  .AnnualRep a:hover {
+    text-decoration: none;
+  }
+
+  .AnnualRep li {
+    background-color: var(--white-01);
+    margin: 4px;
+  
+  }
+  
+  .AnnualRep li:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-01);
+  }
+  
+  .TableGroup {
+    width: 70%;
+    background-color: var(--white-01);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 6px 7px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 10px;
+  }
+  
+  td,
+  th {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  th {
+    font-weight: 700;
+    color: #434343;
+  }
+  
+  .TableHead {
+    background-color: var(--white-02);
+  }
+  
+  tr td,
+  tr th {
+    border-bottom: 1px solid var(--white-03);
+  }
+  
+  .alumni-list,
+  .alumni-list li {
+    list-style-type: none;
+  }
+  
+  /*Featured Stars*/
+  
+  .featureContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media (max-width: 1000px) {
+    .featureContainer {
+      flex-direction: column;
+      align-items: center;
+      display: inline-block;
+    }
+  
+    .FeaContainer {
+      margin-top: 20px;
+    }
+  }
+  
+  .FeaContainer {
+    position: relative;
+    width: 80%;
+    display: inline-block;
+  }
+  
+  .image {
+    display: block;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: solid 1px var(--dark-color);
+    cursor: pointer;
+  }
+  
+  .FeatureDesc a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 5;
+    left: 0;
+    right: 0;
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--dark-color);
+    color: white;
+    padding-top: 22px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 50%;
+    margin: auto;
+  }
+  
+  .FeaContainer:hover .overlay {
+    opacity: 0.8;
+  }
+  
+  /* Past Reruiters */
+  
+  .RecruitWrapper {
+    display: flex;
+    width: 970px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 180px;
+    padding: 0.2rem;
+  }
+  
+  .item {
+    animation: animate 40s linear infinite;
+    padding: 25px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+  }
+  
+  .item2 {
+    animation: animate 25s linear infinite;
+    padding: 25px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+  
+  }
+  
+  .item2:hover,
+  .item:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+  
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(-2000px, 0, 0);
+    }
+  }
+  
+  @media (max-width:767px) {
+    .slider-area h2 {
+      font-size: 30px;
+    }
+  
+    .RecruitWrapper {
+      width: 95%;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
+  
+  /* The Process */
+  .containProcess {
+    width: 100%;
+    background-color: var(--white-02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .aboutCont {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    --tw-text-opacity: 1
+  }
+  
+  .process-list {
+    list-style-type: none;
+    text-align: left;
+  }
+  
+  .process-list li {
+    margin-bottom: 10px;
+  }
+  
+  .guidance {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .guidance h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .guidance ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .guidance p {
+    font-size: 16px;
+    color: #333;
+  }
